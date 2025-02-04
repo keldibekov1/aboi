@@ -13,5 +13,6 @@ swaggerDocs(app);
 
 app.use("/", mainRoute)
 app.use("/users", userRoute);
+app.use("/api", CategoryRoute)
 
 app.listen(port, () => console.log("server started on port", port));

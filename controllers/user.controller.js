@@ -3,7 +3,6 @@ import jwt from "jsonwebtoken";
 import bcrypt from "bcrypt";
 
 
-
 async function register(req, res) {
   try {
     let { phone, password, fullname, role } = req.body;
