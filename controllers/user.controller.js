@@ -2,7 +2,6 @@ import db from "../config/db.js";
 import jwt from "jsonwebtoken";
 import bcrypt from "bcrypt";
 
-
 async function register(req, res) {
   try {
     let { phone, password, fullname, role } = req.body;
@@ -55,7 +54,5 @@ async function login(req, res) {
     res.status(500).send({ message: error.message });
   }
 }
-
-
 
 export { register, login};

@@ -5,7 +5,7 @@ let CategoryRoute = Router()
 
 CategoryRoute.get("/category/all", FindAll)
 CategoryRoute.get("/category/:id", FindOne)
-CategoryRoute.post("/category/:id", Create)
+CategoryRoute.post("/create", Create)
 CategoryRoute.patch("/category/:id", Update)
 CategoryRoute.delete("/category/:id", Delete)
 

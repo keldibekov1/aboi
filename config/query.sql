@@ -11,7 +11,6 @@ CREATE Table users(
     role VARCHAR(55)
 );
 
-
 CREATE Table category (
     id INT AUTO_INCREMENT PRIMARY KEY,
     name_uz VARCHAR(30),
@@ -27,7 +26,6 @@ CREATE Table category_item (
     Foreign Key (product_id) REFERENCES product(id)
 );
 
-
 CREATE Table brands (
     id INT AUTO_INCREMENT PRIMARY KEY,
     name_uz VARCHAR(30),
@@ -41,6 +39,3 @@ CREATE Table country (
     name_uz VARCHAR(30),
     name_ru VARCHAR(30)
 );
-
-
-
